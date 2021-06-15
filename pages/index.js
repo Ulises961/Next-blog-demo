@@ -6,11 +6,11 @@ import { getSortedPostData } from '../lib/post'
 
 export async function getStaticProps() {
   
-  const allPostData = getSortedPostData()
+  const allPostData = getSortedPostData();
     return { 
       props: {
         allPostData} 
-    }
+    };
 }
 
 export default function Home({allPostData}) {
