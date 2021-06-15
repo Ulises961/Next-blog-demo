@@ -28,21 +28,21 @@ export default function Post({postData}){
 
     return (
         <Layout>
-        <Head>
-            <title>{postData.title}</title>
-        </Head>
-        <article>
-            <h1 className={utilStyles.headingXl}>{postData.title} </h1>
+            <Head>
+                <title>{postData.title}</title>
+            </Head>
+            <article>
+                <h1 className={utilStyles.headingXl}>{postData.title} </h1>
 
-            {postData.id}
+                {postData.id}
 
-            <br />
-            <div className={utilStyles.lightText}>
-                <Date dateString={postData.date} />
-            </div>
-            <br />
-            <div dangerouslySetInnerHTML={{__html:postData.contentHtml}} />
-        </article>
+                <br />
+                <div className={utilStyles.lightText}>
+                    <Date dateString={postData.date} />
+                </div>
+                <br />
+                <div dangerouslySetInnerHTML={{__html:postData.contentHtml}} />
+            </article>
         </Layout>
     )
 }

@@ -22,7 +22,8 @@ export default function Home({allPostData}) {
       </Head>
 
       <section className={utilStyle.headingMd}>
-        <p>Hi, This is my first page using {' '} <Link href="/posts/first-post" ><a> Next.js </a></Link>  {' '} and I am preety excited about it</p>
+        <p>Hi there, <br/>This is my first page using {' '} <a> Next.js </a>{' '} and I am preety excited about it.
+        Have a look!</p>
         
       </section>
 
